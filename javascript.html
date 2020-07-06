@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>javascript code</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/"> Laksh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Javascript code</h1>
+          <p class="lead">
+              <pre>
+                //ways to print in javascript 
+                // console.log(`laksh`);
+                // alert(`me`);
+                // document.write(`this is document`);
+                // console.warn(`warning`)
+                // console.error(`error`)
+                // console.log(4 + 6)
+                
+                //javascript variables
+                // what are variables?
+                // containers to store data values
+                
+                var number1 = 34;
+                var number2 = 20;
+                // console.log(number1+number2);
+                
+                // 4 data types in javascript
+                // strings
+                var str1 = `this is a string`;
+                
+                //numbers
+                var num1 = 243;
+                
+                // objects
+                var marks = {
+                    ravi: 34,
+                    laksh: 95,
+                    harry: 65,
+                }
+                // console.log(marks);
+                
+                //booleans
+                var a = true;
+                var b = false;
+                // console.log(a,b)
+                
+                // var und = undefined;  // galti se kuch karde to undefined ho jata he
+                var und
+                // console.log(und)
+                
+                var n = null;
+                // console.log(null)   //null means humne isme kuch nhi dala he
+                
+                /*at a very high leve there are two types of dta types in javascript
+                1  primitive: undefined,null,number,string,boolean,symbol
+                2  reference: arrays and objects
+                */
+                
+                //AARRYS
+                
+                var arr = [1, 2, `laksh`, 4, 5];
+                // console.log(arr)
+                
+                //operators in javascript
+                //arithametic operators
+                var a = 100;
+                var b = 10;
+                // console.log(`the value of a+b is`, a+b);
+                // console.log(`the value of a-b is`, a-b);
+                // console.log(`the value of a*b is`, a*b);
+                // console.log(`the value of a/b is`, a/b);
+                
+                //assignment operators
+                
+                var c = b;
+                c = b;
+                c -= 2;
+                c /= 2;
+                c *= 2;
+                // console.log(c)
+                
+                // comparison operators
+                var x = 35;
+                var y = 59;
+                // console.log(x== y);
+                // console.log(x>= y);
+                // console.log(x<= y);
+                // console.log(x< y);
+                // console.log(x> y);
+                
+                //logical opertors 
+                //logical and
+                // console.log(true&& true)   
+                // console.log(false&& true)
+                // console.log(true&& false)
+                // console.log(false&& false)
+                
+                //logical or
+                // console.log(true|| true)
+                // console.log(true|| false)
+                // console.log(false|| true)
+                // console.log(false|| false)
+                
+                // logical not
+                // console.log(!false)  //sahi ko galat batata he
+                // console.log(!true)
+                
+                //functions
+                function avg(a, b) {
+                    // return (a+b)/2;    /also written as below
+                    c = (a + b) / 2;
+                    return c;
+                }
+                //DRY= DO NOT REPEAT YOURSELF 
+                
+                //calling a function
+                c1 = avg(4, 6);
+                c2 = avg(16, 67);
+                // console.log(c1,c2);
+                
+                //Conditional in javascript
+                /*
+                var age = 19;
+                if (age> 5){
+                    // console.log(`you are not a kid`)
+                }
+                else{
+                    // console.log(`you are  a kid`)
+                }
+                
+                // if else ladder
+                if (age >32){
+                 console.log(`you are not a kid`)   
+                }
+                else if (age>26){
+                    console.log(`yes bacche nhi rahe`)
+                }
+                else if (age>18){
+                    console.log(`pagal bacche nhi rahe`)
+                }
+                else{
+                    console.log(`you are a kid`)
+                }
+                console.log(`end of the ladder`)
+                */
+                
+                //loops in javascript
+                
+                // 1  terating an array
+                // var arr = [1,2,3,4,5,6,7,8,9,0]
+                // console.log(arr);
+                // for(var i = 0;i<arr.length;i++){   //i<7 tak print hoegi 
+                //     if(i==2){
+                //         // break;           //it breaks if i= 2 it cannot run for all of this
+                //     //    continue;        it breaks the selected thing
+                //     }
+                
+                //     console.log(arr[i]);
+                
+                // }
+                
+                // 2  other method
+                
+                // arr.forEach(function(element){
+                // console.log(element)
+                // })
+                
+                // //while loop
+                let j = 0;          //let is for specific brackets {}
+                //  while(j<arr.length){
+                //      console.log(arr[j])
+                //      j++;
+                //  }                                                  // mostly used const or let
+                //do while loop
+                
+                // do{
+                // console.log(arr[j])   //diffrence is do while loop run atleast one time always
+                // j++;
+                // }
+                // while(j < arr.length);
+                
+                // let myarr = [`fan`, `camera`, `34` ,`null`,`true` ]
+                //array method
+                // myarr.length; 
+                // myarr.push(`harry`)    //push add the selected thing in the array
+                // console.log(myarr.length)  //gives the length of an array
+                // myarr.shift()       //shift remove 1st element of an array
+                // myarr.unshift('harry');    add this name to first element
+                // console.log(myarr.unshift(`harry`));   
+                // const newlen = myarr.unshift(`harry`)
+                // console.log(newlen);    //gives the length of an array after ading
+                // myarr.toString();    //change into string
+                //or lets check on web 
+                
+                // string method in javascrip
+                let my = `harry is a string string`;
+                // console.log(my.length)
+                // console.log(my.indexOf(`string`))   //returns first occurance
+                // console.log(my.lastIndexOf(`string`))   //returns last occurance
+                // console.log(my.slice(0,3))   // slice the string from 0 to 3
+                d = my.replace(`harry`, `rohan`)  //replace harry with rohan
+                d = d.replace(`string`, `bad`)   //replace first occurance only
+                // console.log(d,my)
+                
+                //dates in javascript
+                //  let myDate = new Date();
+                // console.log(myDate.getTime());
+                // console.log(myDate.getFullYear());
+                // console.log(myDate.getDay());
+                // console.log(myDate.getMinutes());
+                // console.log(myDate.getHours());
+                
+                //  DOM MANIPULATION(DATA OBJECT MODEL)
+                
+                let elem = document.getElementById('click')
+                // console.log(elem);
+                
+                let elemclass = document.getElementsByClassName('container')
+                // console.log(elemclass);
+                // // elemclass[0].style.background = 'yellow'
+                // elemclass[0].classList.add("bg-primary") ;
+                // elemclass[0].classList.add("text-succ") ;
+                // console.log(elem.innerHTML)
+                // console.log(elem.innerText)
+                // console.log(elemclass[0].innerHTML)
+                // console.log(elemclass[0].innerText)
+                tn = document.getElementsByTagName('button')
+                // console.log(tn);
+                createdElement = document.createElement('p');
+                createdElement.innerText = "this is created para";
+                tn[0].appendChild(createdElement);
+                createdElement2 = document.createElement('b');
+                createdElement2.innerText = "this is created bold";
+                tn[0].replaceChild(createdElement2, createdElement);
+                
+                // removechild(element);   removes an element
+                
+                //selecting using query
+                
+                sel = document.querySelector('.container')    //give only one
+                sel = document.querySelectorAll('.container')  //gives all nodes
+                // console.log(sel)
+                
+                //events in javascript
+                
+                // function clicked() {
+                //     console.log(`the button was clicked`)  
+                // }
+                
+                // window.onload = function () {
+                //     console.log(`the document was loaded`)
+                // }
+                firstcontainer.addEventListener('click', function () {
+                    // console.log(`click on container`);
+                })
+                
+                // firstcontainer.addEventListener('mouseover', function () {
+                //     console.log(`mouse on container`);
+                // })
+                // firstcontainer.addEventListener('mouseout', function () {
+                //     console.log(`mouse out off container`);
+                // })
+                // firstcontainer.addEventListener('mouseup', function () {
+                //     console.log(`mouse up container`);
+                // // })
+                // let = prevHTML =   document.querySelectorAll('.container')[1].innerHTML ;
+                // firstcontainer.addEventListener('mouseup', function () {
+                //     document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+                //     console.log(`mouse up container`);
+                // })
+                
+                // firstcontainer.addEventListener('mousedown', function () {
+                //     document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked</b>"
+                //     console.log(`mouse down container`);
+                // })
+                
+                // function summ(a,b) {
+                //     return a+b;          //old write type
+                // }
+                
+                //   arrow function
+                // summ = (a, b) => {         //new type
+                //     return a + b;
+                // }
+                
+                logKaro = () => {
+                    console.log(`i am your log`);
+                    document.querySelectorAll('.container')[1].innerHTML = "<b> set interval fired</b>"
+                }
+                // settimeout and set interval
+                // setTimeout(logKaro, 5000)     // for a specific time rum function in millisecounds
+                a = setTimeout(logKaro, 7000)
+                
+                // setInterval(logKaro,1000)
+                // clr = setInterval(logKaro,1000)   
+                
+                //use clearInterval(clr)/clearTimeout(a) to cancel setInterval/setTimeout
+                
+                //Localstorage in javascript
+                // localStorage.setItem(`name`,`laksh`)
+                //localStorage.removeItem('name')  clear specific storage
+                //localStorage.clear()   clear all local storage
+                
+                //json
+                // obj = {name:`laksh` ,length:1, a:{this: 'tha\\"t'}}
+                // jso = JSON.stringify(obj)
+                // console.log(jso);
+                // parsed = JSON.parse(`{"name":"laksh" ,"length":1, "a":{"this": "that"}}`) 
+                // console.log(parsed);
+                
+                //template literals
+                a = 46;
+                console.log(`this is my${a}`); 
+              </pre>
+            </p>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
